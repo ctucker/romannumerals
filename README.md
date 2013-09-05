@@ -22,7 +22,7 @@ This avoids having 4 or more of the same letter in sequence.
 
 * The number 4 is written as IV, not IIII (except on some clock faces!)
 * The number 9 is written as IX, not VIIII
-* The number 40 is written XV
+* The number 40 is written XL
 * The number 90 is written XC
 * The number 400 is written CD
 * The number 900 is written CM
