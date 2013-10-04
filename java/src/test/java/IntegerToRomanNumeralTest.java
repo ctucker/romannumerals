@@ -7,52 +7,52 @@ import org.junit.Test;
 public class IntegerToRomanNumeralTest {
 
 	@Test
-	public void decimal1IsRomanI() {
+	public void decimal_1_is_roman_i() {
 		verifyConversion(1, "I");
 	}
 
 	@Test
-	public void decimal2IsRomanII() {
+	public void decimal_2_is_roman_ii() {
 		verifyConversion(2, "II");
 	}
 
 	@Test
-	public void decimal5IsRomanV() {
+	public void decimal_5_is_roman_v() {
 		verifyConversion(5, "V");
 	}
 
 	@Test
-	public void decimal6UsesAdditiveCaseToGetVI() {
+	public void decimal_6_uses_additive_case_to_get_vi() {
 		verifyConversion(6, "VI");
 	}
 
 	@Test
-	public void decimal4UsesSubtractiveCaseToGetIV() {
+	public void decimal_4_uses_subtractive_case_to_get_iv() {
 		verifyConversion(4, "IV");
 	}
 
 	@Test
-	public void decimal10IsRomanX() {
+	public void decimal_10_is_roman_x() {
 		verifyConversion(10, "X");
 	}
 
 	@Test
-	public void decimal12UsesAdditiveCaseToGetXII() {
+	public void decimal_12_uses_additive_case_to_get_xii() {
 		verifyConversion(12, "XII");
 	}
 
 	@Test
-	public void decimal20UsesRepetitiveCaseToGetXX() {
+	public void decimal_20_uses_repetitive_case_to_get_xx() {
 		verifyConversion(20, "XX");
 	}
 
 	@Test
-	public void decimal9UsesSubtractiveCaseToGetIX() {
+	public void decimal_9_uses_subtractive_case_to_get_ix() {
 		verifyConversion(9, "IX");
 	}
 
 	@Test
-	public void decimal14UsesAdditiveOnTenAndSubtractiveOn4ToGetXIV() {
+	public void decimal_14_uses_additive_on_ten_and_subtractive_on4_to_get_xiv() {
 		verifyConversion(14, "XIV");
 	}
 
