@@ -20,7 +20,7 @@ for example, the number 3 is written "III", the number 52 is written LII, and th
 There are six exceptions to this rule, where a sequence is written in a subtractive, rather than additive, form.
 This avoids having 4 or more of the same letter in sequence.
 
-* The number 4 is written as IV, not IIII (except on some clock faces!)
+* The number 4 is written as IV, not IIII
 * The number 9 is written as IX, not VIIII
 * The number 40 is written XL
 * The number 90 is written XC
