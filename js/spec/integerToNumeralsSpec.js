@@ -18,4 +18,14 @@ describe('Integer to Roman Numeral conversion', function() {
 		expect(converter.integerToNumeral(6)).toBe('VI');
 	});
 
+	it('should convert 4 to the seqence IV', function() {
+		expect(converter.integerToNumeral(4)).toBe('IV');
+	});
+
+	it('should convert 10 to the sequence X', function() {
+		expect(converter.integerToNumeral(10)).toBe('X');
+	});
+
+
+
 });

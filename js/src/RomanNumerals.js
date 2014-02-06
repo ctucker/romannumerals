@@ -1,23 +1,27 @@
-var ROMAN_ONE = 'I';
-
 var conversions = [
-	{ 1 : 'I' },
-	{ 5 : 'V' }
-];
-
+	numeral(1, 'I'),
+	numeral(4, 'IV'),
+	numeral(5, 'V'),
+	numeral(10, 'X'),
+].reverse();
 
 function integerToNumeral(intValue) {
-	if (intValue === 0) {
+
+	if (intValue === 0)
 		return '';
-	}
 
-	if (intValue >= 5) {
-		return 'V' + integerToNumeral(intValue - 5);
-	}
+	var chosenConverter = conversions.filter(function(converter) {
+		return intValue >= converter.asInt
+	})[0];
 
-	return ROMAN_ONE + integerToNumeral(intValue - 1);
+	return chosenConverter.asRoman + integerToNumeral(intValue - chosenConverter.asInt);
 }
 
-
+function numeral(asInt, asRoman) {
+	return {
+		asInt : asInt,
+		asRoman : asRoman
+	}
+}
 
 exports['integerToNumeral'] = integerToNumeral;

@@ -1,10 +1,10 @@
 import com.google.common.base.Preconditions;
-import com.google.common.collect.ImmutableSortedMap;
+import com.google.common.collect.ImmutableMap;
 
 public class RomanNumeral {
 
-	private final static ImmutableSortedMap<Integer, String> numeralConversions =
-			ImmutableSortedMap.<Integer, String>reverseOrder()
+	private final static ImmutableMap<Integer, String> numeralConversions =
+			ImmutableMap.<Integer, String>builder()
 			                  .put(1000, "M")
 			                  .put(900, "CM")
 			                  .put(500, "D")
@@ -33,9 +33,8 @@ public class RomanNumeral {
 
 	private String buildString(int remaining) {
 		for (Integer decimal : numeralConversions.keySet()) {
-			if (remaining >= decimal) {
+			if (remaining >= decimal)
 				return numeralConversions.get(decimal) + buildString(remaining - decimal);
-			}
 		}
 		return "";
 	}
